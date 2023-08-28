@@ -1,38 +1,67 @@
-.App {
+.firstLetter {
+  font-size: 85px;
+  display: block;
+  float: left;
+  line-height: 0.5;
+  margin: 15px 15px 10px 0;
+  color: #4a4a4a;
+}
+
+.about-us {
+  font-weight: bold;
+  font-size: 67px;
+  margin: 100px 68px 85px 68px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  z-index: 10;
+  position: relative;
+  background: transparent;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  background: transparent;
+}
+nav {
+  backdrop-filter: blur(1px);
+  background: url(https://rohininilekaniphilanthropies.org/wp-content/uploads/2022/10/Background.png);
+  box-shadow: 0 1px 10px #999;
+}
+.sqaure {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background: #4a4a4a;
+  /* margin: 0 auto; */
+  margin-top: 67px;
+  margin-left: 0;
+  margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-img {
+  width: 29%;
+  margin: auto;
+  position: relative;
+  top: -66px;
+  border: 9px solid #4a4a4a;
+}
+
+@media (max-width: 480px) {
+  .about-us {
+    font-weight: bold;
+    font-size: 67px;
+    margin: 68px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    background: transparent;
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+  .about-img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: -72px;
+    border: 9px solid #4a4a4a;
   }
 }

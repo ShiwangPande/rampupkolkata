@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, useAnimation, useInView } from "framer-motion";
+import Home from './Pages/Home';
+import Navbar from './components/Navbar';
+import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import About from './Pages/About';
 function App() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView, mainControls]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+
+      <Router >
+        <Navbar />
+        <motion.div
+          ref={ref}
+          variants={{
+            hidden: { opacity: 0, y: 100 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden" animate={mainControls} transition={{ duration: 0.5, delay: 0.25 }}
         >
-          Learn React
-        </a>
-      </header>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </motion.div>
+      </Router>
     </div>
   );
 }

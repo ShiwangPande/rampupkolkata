@@ -1,13 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  background: url("https://img.freepik.com/free-photo/watercolor-paper-texture_1194-6307.jpg?w=740&t=st=1692776270~exp=1692776870~hmac=c2e6a4d7b35e46f825a69de30020aa02fcf69ad49a4785d44fe502ff6aba3e55")
+    center center fixed;
+} */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: url("https://i.pinimg.com/564x/38/67/cf/3867cf8224b09e19e04485d0a09cf936.jpg")
+    center center fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4a4a4a;
 }
