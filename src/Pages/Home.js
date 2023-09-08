@@ -1,6 +1,7 @@
 import Achievement from '../components/Achievement';
 import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef, useState } from 'react';
+import logo from "../components/logo.png";
 function Home() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
@@ -16,6 +17,8 @@ function Home() {
 
     return (
         <>
+
+
             <div className='lg:flex lg:flex-row flex flex-col mt-32 lg:mx-12 mx-5  '>
                 {/* <div className=''> */}
 

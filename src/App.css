@@ -15,7 +15,8 @@
   z-index: 10;
   position: relative;
   background: transparent;
-  color: white;
+  /* color: white; */
+  color: rgb(235, 149, 30);
 }
 a {
   text-decoration: none;

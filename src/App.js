@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import About from './Pages/About';
+import Contact from './Pages/Contact';
 function App() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -33,6 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </motion.div>
       </Router>
