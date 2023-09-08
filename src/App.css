@@ -52,6 +52,7 @@ nav {
     font-weight: bold;
     font-size: 67px;
     margin: 68px;
+    padding: 10px;
     text-align: center;
     z-index: 10;
     position: relative;
@@ -64,5 +65,16 @@ nav {
     position: relative;
     top: -72px;
     border: 9px solid #4a4a4a;
+  }
+  .sqaure {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 220px;
+    background: #4a4a4a;
+    /* margin: 0 auto; */
+    margin-top: 67px;
+    margin-left: 0;
+    margin-bottom: 50px;
   }
 }
