@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation, useInView } from "framer-motion";
 import Home from './Pages/Home';
-import Navbar from './components/Navbar';
+import Navbars from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import About from './Pages/About';
@@ -22,7 +22,7 @@ function App() {
     <div className="App">
 
       <Router >
-        <Navbar />
+        <Navbars />
         <motion.div
           ref={ref}
           variants={{
