@@ -8,7 +8,7 @@ function Navbar() {
             <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto lg:p-1 p-4">
                     <a href="/" class="flex items-center">
-                        <img src={logo} class="h-16 mr-3" alt="Flowbite Logo" />
+                    <img src={logo} class="h-16 mr-3" alt="Flowbite Logo" />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ramp Up Kolkata</span>
                     </a>
                     <div class="flex md:order-2">

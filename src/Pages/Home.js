@@ -29,7 +29,7 @@ function Home() {
                     <h1 className='text-5xl font-extrabold my-5'> Ramp Up Kolkata </h1>
 
                     <p className='mt-5   tracking-wide leading-loose text-justify'>
-                        <blockquote class="text-xl italic leading-loose font-semibold text-gray-900 dark:text-white">
+                        <blockquote class="text-xl italic leading-loose font-semibold text-gray-900 ">
                             <svg class="w-8 h-8  text-[#4a4a4a] dark:text-gray-600 mb-4" style={{ transform: "rotateZ(180deg)" }} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
                                 <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                             </svg>
@@ -56,7 +56,7 @@ function Home() {
                             }}
                             initial="hidden" animate={mainControls} transition={{ duration: 0.5, delay: 0.25 }}
                         >
-                            <p className='my-5   tracking-wide text-xl italic leading-loose font-semibold text-justify text-gray-900 dark:text-white'>
+                            <p className='my-5   tracking-wide text-xl italic leading-loose font-semibold text-justify text-gray-900 '>
                                 Avyaya Kheria is a class 12 student from South City International School. He is the founder of Ramp Up Kolkata, which he initiated to improve the lives of several disabled people in his city. He’s a passionate advocate of change and progress of society. He is also the co-founder of a non-profit organisation, TechoTeen, which imparts vocational education to teenagers. Apart from his social activities, he is a passionate athlete, avid researcher and quizzer.
                                 He will forever be found watching sports with a cup of coffee.    </p>
                         </motion.div>
